@@ -5,3 +5,6 @@ print('45 * 63 = ' + str(45 * 63))
 print(15/3)
 print(5 + 3 + 1 * 9 / 5 + 4 - 8) 
 print(4 + 2 * 8)
+print('Sun' + 'flower')
+print('''eat
+food''')
