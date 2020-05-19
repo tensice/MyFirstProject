@@ -39,4 +39,4 @@ print(f'Minutes:{mins}')
 """
 farenheit = int(input('Enter temperature in farenheit\n'))
 celsius = (farenheit - 32) * 5/9
-print(f'x = {farenheit}  y = {celsius}')
+print(f' {farenheit} farenheit is {celsius} celsius')
