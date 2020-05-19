@@ -47,3 +47,14 @@ celsius = int(input('Enter temperature in celsius\n'))
 farenheit = (celsius * 9/5) + 32
 print(f' {celsius} celsius is {farenheit} farenheit')
 """
+"""
+diameter = int(input('Enter diameter\n'))
+radius = diameter / 2
+print(f' Radius is {radius}')
+"""
+"""
+side1 = int(input('Enter side 1\n'))
+side2 = int(input('Enter side 2\n'))
+area = side1 * side2
+print(f'Area of the rectangle is {area}')
+"""
