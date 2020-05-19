@@ -37,6 +37,13 @@ mins = int(minutes) % 60
 print(f'Hours:{hours}')
 print(f'Minutes:{mins}')
 """
+"""
 farenheit = int(input('Enter temperature in farenheit\n'))
 celsius = (farenheit - 32) * 5/9
 print(f' {farenheit} farenheit is {celsius} celsius')
+"""
+"""
+celsius = int(input('Enter temperature in celsius\n'))
+farenheit = (celsius * 9/5) + 32
+print(f' {celsius} celsius is {farenheit} farenheit')
+"""
