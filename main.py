@@ -168,7 +168,7 @@ while True :
       print(f'{operation} is invalid')
     print(f'The result is {ans}')
 """
-
+"""
 fan_on = False
 while True:
   command = input('Type a command. On, Off, or Quit\n')
@@ -189,6 +189,32 @@ while True:
     break
   else:
     print(f'{command} is invalid')
-
-
+"""
+name = input('Type your name\n')
+name = name.capitalize()
+score = int(input('Type your score\n'))
+if score > 94 and score < 101:
+  print(f'{name} got an A+')
+elif score > 89 and score < 95:
+  print(f'{name} got an A')
+elif score > 84 and score < 90:
+  print(f'{name} got a B+')
+elif score > 79 and score < 85:
+  print(f'{name} got a B')
+elif score > 74 and score < 80:
+  print(f'{name} got a C+')
+elif score > 69 and score < 75:
+  print(f'{name} got a C')
+elif score > 64 and score < 70:
+  print(f'{name} got a D+')
+elif score > 59 and score < 65:
+  print(f'{name} got a D')
+elif score > 54 and score < 60:
+  print(f'{name} got an E+')
+elif score > 49 and score < 55:
+  print(f'{name} got an E')
+elif score < 50:
+  print('You failed')
+else:
+  print(f'{score} is invalid')
 
