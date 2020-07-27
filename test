@@ -1,6 +1,4 @@
-x = True
-if x == True:
-if x:
+
 
 
 
