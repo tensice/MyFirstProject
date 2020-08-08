@@ -865,6 +865,7 @@ for i in range(1, num + 1):
   if num % i == 0:
     print(i)
 """
+"""
 list1 = []
 for i in range(1,100):
   if i % 7 == 0:
@@ -879,7 +880,289 @@ print(list3)
 cities = ['Austin', 'Round Rock', 'Dallas', 'San Antonio', 'San Francisco']
 list4 = [city for city in cities if not city.isalpha()]
 print(list4)
+list5 = [i for i in range(1,100) if i % 2 == 0]
+print(list5)
+
+list6 = [i for i in range(1,1000) if i % 7 == 0]
+print(list6)
+"""
+"""
+list7 = [i ** 2 for i in range(1,100) if i % 2 == 1]
+print(list7)
+"""
+"""
+v = 'aeiou'
+vowels = ['a','e','i','o','u']
+human_string = input('Type in a string\n')
+vowel_remove = [i for i in human_string if i not in v]
+str1 = ''
+x = str1.join(vowel_remove)
+print(x)
+"""
+"""
+num = int(input('Type a number\n'))
+factors = [i for i in range(1, num + 1) if num % i == 0]
+print(factors)
+"""
+"""
+items = {1:'Jack',2:'Jon',3:None}
+blank_remove = {i:items.get(i) for i in items if items.get(i) is not None}
+print(blank_remove)
+"""
 
 
 
 
+"""
+human_string = input('Type a string\n')
+character_count = {}
+for i in human_string:
+  h = i.lower()
+  if h in character_count:
+    character_count[h] += 1
+  else:
+    character_count[h] = 1
+
+print(character_count)
+"""
+
+"""
+human_string = input('Type a string\n')
+character_count = {i:character_count for i in human_string if i in character_count[i] }
+"""
+
+
+
+
+
+"""
+def my_func():
+  str1 = ''
+  for i in range(1,11):
+    x = i ** 2
+    str1 += f'{x}-'
+  return str1
+  
+  
+x = my_func()
+x = x.replace('-', ',')
+print(x[:-1])
+"""
+
+
+"""
+def sep_even_odd():
+  even_list = []
+  odd_list = []
+  for i in main_list:
+    if i % 2 == 0:
+      even_list.append(i)
+    else:
+      odd_list.append(i)
+  return even_list,odd_list
+
+main_list = [2,7,4,8,3,9]
+even,odd = sep_even_odd()
+print(even)
+print(odd)
+"""
+"""
+str1 = input('Enter a string\n')
+
+def swapcase1():
+  str3 = ''
+  for i in str1:
+    str2 = str1.swapcase()
+    str3 += f'{str2}: This is with the characters case swapped'
+    return str3
+x = swapcase1()
+print(x)
+"""
+"""
+import math
+num = int(input('Type a number\n'))
+def prime_factor(num):
+  str1 = ''
+  num2 = num
+  while num % 2 == 0: 
+    str1 += '2 * '
+    num = num / 2
+  for i in range(3,int(math.sqrt(num2))+1 , 2):
+    while num % i == 0: 
+      str1 += f'{i} * ' 
+      num = num / i
+  if num > 2: 
+    str1 += f'{num}'
+  str2 = str1
+  return str2
+x = prime_factor(num)
+print(f'The prime factors of {num} are {x}')
+"""
+"""
+chemistry = [3,5,6,8,2,3,4,3,4,5,3]
+pyshics = [7,2,3,3,5,7,3,4,3,5,7]
+math = [8,2,10,4,3,2,3,1,6,8,9]
+average = []
+y = len(chemistry)
+def average_func():
+  for i in range(0,y):
+    student_total = chemistry[i] + pyshics[i] + math[i]
+    i += 1
+    average.append(student_total / 3)
+  return average
+
+x = average_func()
+print(x)
+
+"""
+
+"""
+import random
+print('Rolling...')
+x = random.randint(1,6)
+print(f'You got a {x}')
+"""
+
+"""
+human_string = input('Enter a string\n')
+word_count = 1
+
+for i in human_string:
+  if i == ' ':
+    word_count += 1
+
+
+character_count = {}
+for i in human_string:
+  if i in character_count:
+    character_count[i]
+  else:
+    character_count[i] = 1
+
+x = sum(character_count.values())
+print(character_count)
+print(f'{x} unique characters')
+print(f'{word_count} words')
+"""
+"""
+def add(*x):
+  print(x)
+  sum = 0
+  for i in x:
+    sum += i
+  return sum
+
+print(add(1,2,3,4,5))
+"""
+"""
+def my_func(**kwargs):
+  print(kwargs)
+  for key,value in kwargs.items():
+    print(key,value)
+
+my_func(a = 1, b = 2, c = 3, d = 4)
+"""
+"""
+def city_temp(cites,temps):
+  #dict1 = {}
+  #for index, i in enumerate(cities):
+    #dict1[i] = temps[index]
+  return dict1
+cities = ['Austin','Bostin','New York City']
+temp = [98,75,76]
+print(city_temp())
+"""
+"""
+def name_age(f,l,a):
+  my_dict = {first+ ' ' +last:age for first,last,age in zip(f,l,a)}
+  return my_dict
+
+first = ['bob','jack', 'jill']
+last = ['smith','lily','billy']
+age = [50,60,30]
+my_dict = {}
+print(name_age(first,last,age))
+"""
+"""
+import itertools
+
+l1 = 'yeet'
+p = itertools.permutations(l1)
+
+print(list(p))
+"""
+"""
+def type_func(x,y,z):
+
+  x = str(5)
+  y = []
+  z = {}
+  def type_func(x,y,z):
+    print(type(x))
+    print(type(y))
+    print(type(z))
+
+  type_func(x,y,z)
+"""
+
+human_input = input('Type random characters\n')
+special_characters = ['!','@','#','$','%','^','*','()']
+upper_case = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+lower_case = ['abcdefghijklmnopqrstuvwxyz']
+length = len(human_input)
+for i in human_input:
+  if i in upper_case:
+    if i in lower_case:
+      if i in special_characters:
+        if length >= 8 and length <= 15:
+          print('yes')
+        else:
+          print('no')
+
+"""
+nums = [[8,1,3,5],[9,5,7,3],[9,7,4,9,7]]
+def my_func(nums1):
+  for i in nums1:
+    i.sort()
+  return nums1
+x = my_func(nums)
+print(nums)
+print(x)
+"""
+"""
+def perfect_number(n):
+    sum = 0
+    for i in range(1, n):
+        if n % i == 0:
+            sum += i
+    return sum == n
+print(perfect_number(6))
+"""
+"""
+from datetime import datetime
+date3 = input('Type a date\n')
+
+date3_dt = datetime.strptime(date3,'%y/%m/%d %H:%M:%S')
+
+#date3s = date3.strptime()
+date1 = datetime(2014, 7, 2)
+date2 = datetime(2014, 6, 11)
+sub = date1 - date2
+print(abs(sub))
+"""
+
+
+
+"""
+students = ['Jon','Jack','Bill','Bob']
+nums = [3,4,1,5]
+"""
+"""
+human_str = input('Type some words\n')
+words = []
+for i in human_str:
+  if i == '':
+    words.append(i)
+
+print(words) 
+"""
