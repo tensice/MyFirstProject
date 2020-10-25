@@ -82,7 +82,7 @@ for i in reversed(diamond_character):
   print(diamond_character[length - 1])
   num -= 1
 """
-
+"""
 list1 = [chr(i) for i in range(97,97 + human_input)]
 list1.reverse()
 length = len(list1)
@@ -104,7 +104,7 @@ for i in range(length-1,0,-1):
   for k in range(i-1,0,-1):
     print(''*(human_input-i),list1[k-1],end = '')
   print()
-
+"""
 
 
 
