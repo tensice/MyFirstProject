@@ -1,0 +1,5 @@
+print('Hello, World!')
+print(82367 + 91567.423)
+print(1024 * 476582)
+print(8 ** 5)
+print(8 ** (1/3))

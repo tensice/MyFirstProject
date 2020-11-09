@@ -119,3 +119,5 @@ for i in range(human_input-1):
   print(' '*(i+1)+ '* '*(human_input-i-1))
 """
 
+
+
