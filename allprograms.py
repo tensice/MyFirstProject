@@ -1,4 +1,4 @@
-  
+
 
 """
 print(87 * 34)
@@ -142,7 +142,7 @@ print(f'The factorial of {num} is {factorial}')
 """
 """
 f = 1
-for i in range(2, num + 1):
+for i in range(2, num + 1)
   f = f * i
 print (f)
 """
